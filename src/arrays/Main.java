@@ -3,7 +3,7 @@ package arrays;
 public class Main {
     static String[] names;
     static int count;
-
+    static int count2;
     static String product;
     static int[] days;
 
@@ -18,14 +18,16 @@ public class Main {
 
         for (int i = 0; i < names.length && i < days.length; i++) {
             count++;
-            System.out.printf("%d) %d week buy product %s %n",
-                    count, days[i], names[i]);
 
+
+            System.out.printf("%d) %d week product %s %n",
+                    count, days[i], names[i]);
         }
 
         for (String name : names) {
 
             if (name.equals(product)) {
+                count2++;
 
                 System.out.println("Product is " + name);
             }
@@ -33,7 +35,7 @@ public class Main {
 
         if (count > 0)
             System.out.println("Number of " + product +
-                    "'s matches are " + count);
+                    "'s matches are " + count2);
 
         if (count == 0)
             System.out.println("No data :(");
