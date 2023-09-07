@@ -1,6 +1,6 @@
 package arrays;
 
-public class Main {
+public class Main01 {
     static String[] names;
     static int count;
     static int count2;
